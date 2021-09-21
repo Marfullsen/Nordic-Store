@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col relative">
+  <div
+    class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col relative init-desaparecer"
+  >
     <Icon
       class="absolute z-10 right-7 hover:grow"
       @click="deseaBorrar($event)"
@@ -46,17 +48,26 @@ export default {
   },
   data() {
     return {
-      showModal: this.$modal_delete,
+      showModal: this.$show_modal_delete,
+      productoBtnBorrar: this.$productoBtnBorrar,
     };
   },
   methods: {
     deseaBorrar(e) {
       this.showModal = true;
-      e.target.closest("div").style.display = "none";
-      console.log(e.target.parentElement.innerHTML);
+      this.productoBtnBorrar = e.target.closest("div");
     },
   },
 };
 </script>
 
-<style></style>
+<style>
+.init-desaparecer {
+  transition: opacity 1.5s linear;
+}
+
+.desaparecer {
+  opacity: 0;
+  transition-timing-function: linear, step-end;
+}
+</style>

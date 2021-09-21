@@ -83,7 +83,7 @@
           Cancelar
         </button>
         <button
-          @click="showModal = false"
+          @click="borrarProducto"
           id="btnBorrar"
           class="
             mb-2
@@ -112,8 +112,19 @@
 export default {
   data() {
     return {
-      showModal: this.$modal_delete,
+      showModal: this.$show_modal_delete,
+      productoBtnBorrar: this.$productoBtnBorrar,
     };
+  },
+  methods: {
+    borrarProducto() {
+      const self = this;
+      this.productoBtnBorrar.classList.add("desaparecer");
+      setTimeout(function () {
+        self.productoBtnBorrar.style.display = "None";
+      }, 500);
+      this.showModal = false;
+    },
   },
 };
 </script>

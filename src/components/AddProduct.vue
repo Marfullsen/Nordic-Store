@@ -3,7 +3,7 @@
     <a href="#">
       <img
         class="hover:grow hover:shadow-lg moreCardsBelow p-20"
-        src="https://cdn.pixabay.com/photo/2021/07/25/08/07/add-6491203__340.png"
+        src="../assets/img/proveedor.png"
       />
       <div class="pt-3 flex items-center justify-between">
         <p class="">Agregar producto</p>
