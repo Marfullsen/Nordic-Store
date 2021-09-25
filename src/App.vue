@@ -52,6 +52,7 @@ export default {
   data() {
     return {
       modo_oscuro: this.$dark_mode,
+      modo_edicion: this.$modo_edicion,
     };
   },
 };
@@ -64,7 +65,7 @@ export default {
   --muted-color: #5f6774;
   --muted-dark-color: #5f6774;
 
-  --main-bg-dark-color: #BDC1C6;
+  --main-bg-dark-color: #bdc1c6;
   --main-dark-color: ghostwhite;
   --pane-padding: 5px 42px;
 }

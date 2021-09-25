@@ -23,7 +23,7 @@
   >
     <div
       @click="showModal = false"
-      class="absolute bg-black opacity-80 inset-0 z-0"
+      class="absolute bg-black opacity-10 inset-0 z-0"
     ></div>
     <div
       class="

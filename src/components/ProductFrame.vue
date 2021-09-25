@@ -3,6 +3,7 @@
     class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col relative init-desaparecer"
   >
     <Icon
+      v-if="modo_edicion === true"
       class="absolute z-10 right-7 hover:grow"
       @click="deseaBorrar($event)"
       icon="simple-line-icons:close"
@@ -48,6 +49,7 @@ export default {
   },
   data() {
     return {
+      modo_edicion: this.$modo_edicion,
       showModal: this.$show_modal_delete,
       productoBtnBorrar: this.$productoBtnBorrar,
     };
