@@ -86,50 +86,50 @@
 
         <ProductFrame
           image_url="https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-          prod_name="PELO"
-          prod_price="5643"
+          prod_name="Tasita de té"
+          prod_price="25000"
         >
         </ProductFrame>
         <ProductFrame
           image_url="https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-          prod_name="PELO"
-          prod_price="5643"
+          prod_name="Tubo de extensión"
+          prod_price="125643"
         >
         </ProductFrame>
 
         <ProductFrame
           image_url="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-          prod_name="PELO"
+          prod_name="Blah blah blah"
           prod_price="5643"
         >
         </ProductFrame>
         <ProductFrame
           image_url="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-          prod_name="PELO"
+          prod_name="Blah blah blah"
           prod_price="5643"
         >
         </ProductFrame>
         <ProductFrame
           image_url="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-          prod_name="PELO"
+          prod_name="Blah blah blah"
           prod_price="5643"
         >
         </ProductFrame>
         <ProductFrame
           image_url="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-          prod_name="PELO"
+          prod_name="Blah blah blah"
           prod_price="5643"
         >
         </ProductFrame>
         <ProductFrame
           image_url="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80"
-          prod_name="PELO"
+          prod_name="Blah blah blah"
           prod_price="5643"
         >
         </ProductFrame>
         <ProductFrame
           image_url="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80"
-          prod_name="PELO"
+          prod_name="Blah blah blah"
           prod_price="5643"
         >
         </ProductFrame>
@@ -184,6 +184,7 @@
         </p>
       </div>
     </section>
+    <modal-product></modal-product>
     <modal-delete></modal-delete>
     <boton-flotante></boton-flotante>
   </main>
@@ -196,6 +197,7 @@ import ModalDelete from "../components/ModalDelete.vue";
 import AddProduct from "../components/AddProduct.vue";
 import MainCarousel from "../components/MainCarousel.vue";
 import BotonFlotante from "../components/BotonFlotante.vue";
+import ModalProduct from "../components/ModalProduct.vue";
 
 export default {
   name: "Home",
@@ -206,11 +208,11 @@ export default {
     AddProduct,
     MainCarousel,
     BotonFlotante,
+    ModalProduct,
   },
   data() {
     return {
       modo_oscuro: this.$dark_mode,
-      showModal: this.$modal_delete,
       modo_edicion: this.$modo_edicion,
       banner_text1: "Zig Zag jiwsaw",
       banner_text2: "Brown and blue hardbound book",
